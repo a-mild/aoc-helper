@@ -1,0 +1,22 @@
+[project]
+name = "aoc-helper"
+version = "0.1.0"
+
+dependencies = [
+    "httpx",
+    "typer"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "mypy"
+]
+
+[project.scripts]
+aoc = "aoc_helper.cli:app"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
